@@ -1,0 +1,101 @@
+.header {
+    padding-top: 24px;
+    padding-bottom: 24px;
+
+    border-bottom: solid $border-color 1px;
+
+    & > .container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+}
+  
+.nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav__menu {
+    display: flex;
+
+    gap: 50px;
+    margin-left: 50px;
+}
+
+.nav__logo {
+    font-family: $secondary-font;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+
+    text-decoration: none;
+}
+
+.nav__logo--top {
+    color: #000;
+}
+
+.nav__logo--mod {
+    color: $main-color;
+}
+
+.nav__link {
+    position: relative;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: $headers-color;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:focus,
+    &:hover {
+        color: $main-color;
+    }
+}
+  
+.menu-contacts {
+    display: flex;
+
+    gap: 50px;
+    margin-left: auto;
+}
+
+.menu-contacts__icon {
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+
+    fill: $text-color;
+
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu-contacts__contacts {
+    display: flex;
+    align-items: center;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: $text-color;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        color: $main-color;
+    }
+
+    &:hover > .menu-contacts__icon, 
+    &:focus > .menu-contacts__icon {
+        fill: $main-color;
+    }
+}

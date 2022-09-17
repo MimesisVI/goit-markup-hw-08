@@ -1,0 +1,19 @@
+@import './utils/vars';
+@import './base/normalize';
+@import './base/global';
+@import './utils/mixin';
+
+@import './layout/header';
+
+@import './layout/main__hero';
+@import './layout/main__ours-plus';
+@import './layout/main__work';
+@import './layout/main__team';
+@import './layout/main__clients';
+
+@import './layout/_portfolio';
+
+@import './layout/footer';
+
+@import './components/modal';
+@import './components/btn';
