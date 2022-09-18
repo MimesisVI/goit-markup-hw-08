@@ -607,12 +607,18 @@ body {
 @media screen and (max-width: 767px) {
   .header__container.is-open .header-socmenu {
     display: flex;
-    gap: 20px;
+    flex-wrap: wrap;
   }
+}
+
+.header-socmenu__item {
+  content: "";
+  margin-right: 10px;
 }
 
 .header-socmenu__item:not(:last-child) :after {
   content: "";
+  margin-left: 10px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   transform: rotate(90deg);
 }
@@ -1131,6 +1137,7 @@ body {
 }
 
 .card__item {
+  display: flex;
   width: 450px;
 }
 @media screen and (min-width: 768px) {
@@ -1145,6 +1152,9 @@ body {
 }
 
 .card__link {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .card__link:hover, .card__link:focus {
@@ -1178,6 +1188,7 @@ body {
 }
 
 .card__container {
+  flex-grow: 1;
   padding-top: 20px;
   padding-bottom: 20px;
   padding-left: 24px;
@@ -1362,6 +1373,9 @@ body {
   fill: #ffffff;
 }
 
+.mailing {
+  display: block;
+}
 @media screen and (max-width: 1199px) {
   .mailing {
     display: flex;
@@ -1387,14 +1401,12 @@ body {
   color: #FFFFFF;
 }
 
-/* .mailing__form {
+.mailing__form {
+  width: 100%;
+}
 
-    @media screen and (min-width: 1200px)  {
-        display: flex;
-        align-items: flex-end;
-    }
-} */
 .mailing__label {
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1406,7 +1418,7 @@ body {
 }
 
 .mailing__input {
-  width: 450px;
+  width: 100%;
   padding-left: 16px;
   padding-top: 12px;
   padding-bottom: 12px;
@@ -1424,7 +1436,7 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .mailing__input {
-    max-width: 358px;
+    width: 358px;
     height: 50px;
     margin-right: 12px;
   }

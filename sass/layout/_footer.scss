@@ -169,6 +169,7 @@
 }
 
 .mailing {
+    display: block;
 
     @media screen and(max-width: 1199px){
         display: flex;
@@ -196,15 +197,12 @@
 
 }
 
-/* .mailing__form {
-
-    @media screen and (min-width: 1200px)  {
-        display: flex;
-        align-items: flex-end;
-    }
-} */
+.mailing__form {
+    width: 100%;
+}
 
 .mailing__label {
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -215,8 +213,8 @@
 }
 
 .mailing__input {
-    width: 450px;
-    
+    width: 100%;
+
     padding-left: 16px;
     padding-top: 12px;
     padding-bottom: 12px;
@@ -234,7 +232,7 @@
     }
 
     @media screen and (min-width: 1200px) {
-        max-width: 358px;
+        width: 358px;
         height: 50px;
         margin-right: 12px;
     }
