@@ -1,15 +1,33 @@
 .main-port {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  @media screen and (max-width: 1199px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .filter-menu {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
 
-  margin-bottom: 50px;
+  margin-bottom: 40px;
   margin-top: 0;
   gap: 8px;
+
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    justify-content: center;
+
+    margin-bottom: 50px;
+  }
 }
 
 .filter-menu__button {
@@ -49,6 +67,18 @@
   gap: 30px;
 }
 
+.card__item {
+  width: 450px;
+
+  @media screen and(min-width: 768px) {
+    width: 354px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 370px;
+  }
+}
+
 .card__link {
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -67,9 +97,9 @@
 .card__thumb {
   position: relative;
 
-  width: 370px;
-
   overflow: hidden;
+
+  width: 100%;
 }
 
 .card__overlay {
@@ -97,7 +127,7 @@
   padding-bottom: 20px;
   padding-left: 24px;
   padding-right: 24px;
-  width: 370px;
+  width: 100%;
 
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;

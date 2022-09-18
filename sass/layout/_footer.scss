@@ -19,15 +19,20 @@
 }
 
 .footer__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
     @media screen and (min-width: 768px) {
         display: flex;
         flex-direction: row;
         justify-content: center;
+        align-items: flex-start;
     }
 }
 
 .contacts-container {
-    @media screen and (min-width: 480px) and (max-width: 1199px) {
+    @media screen and (max-width: 1199px) {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -92,7 +97,7 @@
 
 .soc-container {
 
-    @media screen and (min-width: 480px) and (max-width: 767px) {
+    @media screen and (max-width: 767px) {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -108,7 +113,7 @@
     }
 
     @media screen and (min-width: 1200px) {
-        margin-left: 50px;
+        margin-left: 70px;
         padding-top: 12px;
     }
 }
@@ -165,13 +170,7 @@
 
 .mailing {
 
-    @media screen and (min-width: 480px) and (max-width: 767px){
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    @media screen and (min-width: 768px) and (max-width: 1199px){
+    @media screen and(max-width: 1199px){
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -197,22 +196,27 @@
 
 }
 
-.mailing__form {
+/* .mailing__form {
+
     @media screen and (min-width: 1200px)  {
         display: flex;
         align-items: flex-end;
     }
-}
+} */
 
 .mailing__label {
-    @media screen and (min-width: 480px) and (max-width: 1199px) {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media screen and (min-width: 1200px) {
+        flex-direction: row;
     }
 }
 
 .mailing__input {
+    width: 450px;
+    
     padding-left: 16px;
     padding-top: 12px;
     padding-bottom: 12px;
@@ -224,13 +228,13 @@
 
     background-color: $background-color;
 
-    @media screen and (min-width: 480px) {
-        width: 450px;
+    @media screen and (max-width: 1199px) {
+        max-width: 450px;
         margin-bottom: 20px;
     }
 
     @media screen and (min-width: 1200px) {
-        width: 358px;
+        max-width: 358px;
         height: 50px;
         margin-right: 12px;
     }
