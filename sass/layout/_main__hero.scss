@@ -46,12 +46,8 @@
   text-align: center;
   text-transform: uppercase;
   color: #ffffff;
-
-  @media screen and(min-width: 480px) {
-    @include font($primary-font, 900, 26, 1.62, 0.06);
-  }
   
-  @media screen and(min-width: 768px) {
+  @media screen and (max-width: 1199px) {
     @include font($primary-font, 900, 26, 1.62, 0.06);
   }
 
