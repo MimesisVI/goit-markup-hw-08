@@ -8,21 +8,21 @@
   padding-top: 118px;
   padding-bottom: 118px;
 
-  background-image: $bg-hero-gradient, url(../../images/hero-bg-mob.jpg);
+  background-image: $bg-hero-gradient, url(../images/hero-bg-mob.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   @include retina {
-    background-image: $bg-hero-gradient, url(../../images/hero-bg-mob-2x.jpg);
+    background-image: $bg-hero-gradient, url(../images/hero-bg-mob-2x.jpg);
   }
 
   @media screen and(min-width: 768px) {
-    background-image: $bg-hero-gradient, url(../../images/hero-bg-tab.jpg);
+    background-image: $bg-hero-gradient, url(../images/hero-bg-tab.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     @include retina {
-        background-image: $bg-hero-gradient, url(../../images/hero-bg-tab-2x.jpg);
+      background-image: $bg-hero-gradient, url(../images/hero-bg-tab-2x.jpg);
     }
   }
 
@@ -30,12 +30,12 @@
     padding-top: 200px;
     padding-bottom: 200px;
 
-    background-image: $bg-hero-gradient, url(../../images/hero-bg-desk.jpg);
+    background-image: $bg-hero-gradient, url(../images/hero-bg-desk.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     @include retina {
-      background-image: $bg-hero-gradient, url(../../images/hero-bg-desk-2x.jpg);
+      background-image: $bg-hero-gradient, url(../images/hero-bg-desk-2x.jpg);
     }
   }
 }
