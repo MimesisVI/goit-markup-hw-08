@@ -6,6 +6,45 @@
     letter-spacing: $ls + em;
 }
 
+@mixin retina {
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      @content;
+  }
+}
+
+@mixin gap($value-column, $value-row: $value-column) {
+  @if $value-row == 0 {
+      & {
+          margin-right: calc( 0px - (#{$value-column} / 2));
+          margin-left: calc( 0px - (#{$value-column} / 2));
+      }
+      & > * {
+          margin-right: calc(#{$value-column} / 2);
+          margin-left: calc(#{$value-column} / 2);
+      }
+  }
+  @else if $value-column == 0 {
+      & {
+          margin-top: -$value-row;
+      }
+      & > * {
+          margin-top: $value-row;
+      }
+  }
+  @else {
+      & {
+          margin-left: calc(0px - #{$value-column} / 2);
+          margin-right: calc(0px - #{$value-column} / 2);
+          margin-top: -$value-row;
+      }
+      & > * {
+          margin-left: calc(#{$value-column} / 2);
+          margin-right: calc(#{$value-column} / 2);
+          margin-top: $value-row;
+      }
+  }
+}
+
 /* ---------- Шаблоны ---------- */
 
 @mixin mobile {
