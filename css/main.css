@@ -386,6 +386,7 @@ body {
   border-bottom: solid #ececec 1px;
 }
 .header > .container {
+  position: relative;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -667,7 +668,6 @@ body {
 
 .menu-button {
   position: absolute;
-  top: 10px;
   right: 15px;
   z-index: 2;
   display: inline-flex;
