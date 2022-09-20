@@ -11,7 +11,6 @@
 }
 
 .ours-plus__list {
-
   @media screen and(min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
@@ -27,8 +26,7 @@
   }
 }
 
-.ours-plus__item {
-
+.ours-plus__item {  
   @media screen and (max-width: 767px) {
     margin-bottom: 30px;
   }
