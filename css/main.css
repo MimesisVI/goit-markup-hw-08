@@ -340,7 +340,6 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -1292,6 +1291,9 @@ body {
     flex-direction: row;
     justify-content: left;
   }
+}
+.footer > .container {
+  align-items: stretch;
 }
 
 .footer__container {

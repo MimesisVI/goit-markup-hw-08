@@ -16,6 +16,10 @@
             justify-content: left;
         }
     }
+
+    & > .container {
+        align-items: stretch;
+    }
 }
 
 .footer__container {
