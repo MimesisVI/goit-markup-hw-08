@@ -173,6 +173,8 @@
 .menu-contacts {
 
     @media screen and (max-width: 767px) {
+        margin-top: 50px;
+
         .header__container.is-open & {
             display: flex;
             flex-direction: column;

@@ -546,6 +546,9 @@ body {
 }
 
 @media screen and (max-width: 767px) {
+  .menu-contacts {
+    margin-top: 50px;
+  }
   .header__container.is-open .menu-contacts {
     display: flex;
     flex-direction: column;
