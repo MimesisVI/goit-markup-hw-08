@@ -372,6 +372,11 @@ body {
 .no-scroll {
   overflow: hidden;
 }
+@media screen and (min-width: 768px) {
+  .no-scroll {
+    overflow: auto;
+  }
+}
 
 /* ---------- Шаблоны ---------- */
 .header {
